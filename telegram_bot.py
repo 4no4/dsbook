@@ -8,7 +8,7 @@ class TelegramBot:
     def __init__(self, system):
         self.system = system
  
-    def start(self, bot, update: Update,context :CallbackContext):
+    def start(self, bot, update):
         # 辞書型 inputにユーザIDを設定
         input = {'utt': None, 'sessionId': str(update.message.from_user.id)}
  

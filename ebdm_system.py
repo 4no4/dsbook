@@ -1,4 +1,3 @@
-from telegram_bot import TelegramBot
 from elasticsearch import Elasticsearch
 import MeCab
 # コサイン類似度で使うライブラリ

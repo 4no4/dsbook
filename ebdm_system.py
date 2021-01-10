@@ -15,6 +15,8 @@ try:
 except:
     pass
 
+
+input = {'utt':None}
 # 類似度の評価関数
 # コサイン類似度
 def cosine(a, b):
@@ -67,6 +69,8 @@ class EbdmSystem:
         return pair[2]
 
 if __name__ == '__main__':
-    system = EbdmSystem()
-    bot = TelegramBot(system)
-    bot.run()
+    while True:
+        ebdm = EbdmSystem()
+        text = input('> ')
+        input = {'utt':text}
+        print(ebdm.reply(input))
